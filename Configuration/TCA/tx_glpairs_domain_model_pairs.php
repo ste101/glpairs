@@ -305,7 +305,12 @@ $tx_glpairs_domain_model_pairs = [
 	    ],
 	    'custom_backimage2' => [
 	        'exclude' => 0,
-	        'displayCond' => 'FIELD:backimage:=:3',
+	        'displayCond' => [
+                    'AND' => [
+                        'FIELD:backimage:=:3',
+                        'FIELD:type:=:1',
+                    ],
+                ],
 	        'label' => 'LLL:EXT:glpairs/Resources/Private/Language/locallang_db.xlf:tx_glpairs_domain_model_pairs.customBackimage2',
 	        'config' => [
 	            'type' => 'file',
