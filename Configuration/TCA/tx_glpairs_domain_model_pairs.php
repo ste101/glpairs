@@ -422,7 +422,7 @@ $tx_glpairs_domain_model_pairs = [
 			'config' => [
 				'type' => 'select',
 				'foreign_table' => 'tx_glpairs_domain_model_pair',
-				'foreign_table_where' => 'AND {#tx_glpairs_domain_model_pair}.{#type}=###REC_FIELD_type###',
+				'foreign_table_where' => 'AND {#tx_glpairs_domain_model_pair}.{#type}=###REC_FIELD_type### AND {#tx_glpairs_domain_model_pair}.{#deleted}=0 AND {#tx_glpairs_domain_model_pair}.{#hidden}=0',
 				'MM' => 'tx_glpairs_pairs_pair_mm',
 				'size' => 10,
 				'autoSizeMax' => 30,
