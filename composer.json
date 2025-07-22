@@ -26,6 +26,11 @@
 		"source" : "https://github.com/geraldloss/glpairs"
 	},
 	"license" : "GPL-3.0-or-later",
+	"extra": {
+		"typo3/cms": {
+			"extension-key": "glpairs"
+		}
+	},
 	"keywords" : [
 		"TYPO3",
 		"extension",
