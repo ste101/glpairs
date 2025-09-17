@@ -1981,6 +1981,8 @@ GlPairs.glpairsEventHandler = function(i_intUniqueId, i_objEvent, i_strHandler, 
 //**************************************************************************************** //
 // finally start the glpairs plugin for all IDs stored globaly in the array arrGlpairsIds
 // if document ready, call the init function of the game
-GlPairs.glpairsInit(arrGlpairsIds);
+if(typeof arrGlpairsIds !== 'undefined') {
+	GlPairs.glpairsInit(arrGlpairsIds);
+}
 //**************************************************************************************** //
 //**************************************************************************************** //
